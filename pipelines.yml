@@ -35,29 +35,7 @@ resources:
         - "CN"
         - "GB"
         
-pipelines:
-  - name: demo_release_mgmt
-    steps:
-      - name: bundle
-        type: CreateReleaseBundle
-        configuration:
-          releaseBundleName: demo_rb
-          releaseBundleVersion: v1.0.${run_number}
-          dryRun: false
-          sign: false
-          description: "some random test description"
-          inputResources:
-            - name: gosvc_promoted_build_info
-              trigger: true
-          outputResources:
-            - name: release_bundle
-          releaseNotes:
-            syntax: markdown
-            content: |
-              ## Heading
-                * Bullet
-                * Points
-             
+pipelines:             
       - name: sign
         type: SignReleaseBundle
         configuration:
