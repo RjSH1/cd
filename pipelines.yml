@@ -4,7 +4,7 @@ resources:
     type: BuildInfo
     configuration:
       sourceArtifactory: zen_art
-      buildName: svc_build
+      buildName: dbp_build
       buildNumber: 1
  
   # Release bundle
