@@ -35,7 +35,9 @@ resources:
         - "CN"
         - "GB"
         
-pipelines:             
+pipelines:   
+  - name: demo_release_mgmt
+    steps:
       - name: sign
         type: SignReleaseBundle
         configuration:
