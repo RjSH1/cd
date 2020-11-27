@@ -35,7 +35,7 @@ resources:
         - "CN"
         - "GB"
         
- pipelines:
+pipelines:
   - name: demo_release_mgmt
     steps:
       - name: bundle
@@ -74,4 +74,4 @@ resources:
           dryRun: false
           inputResources:
             - name: signed_bundle
-            - name: distribution_rules
+            - name: distribution_rules 
